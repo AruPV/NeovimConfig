@@ -45,7 +45,7 @@ return {
 			lspc.rust_analyzer.setup {}				-- Rust
 			lspc.gopls.setup {}						-- Go
 			lspc.lua_ls.setup {}					-- Lua
-			lspc.clangd.setup {}					-- C
+			lspc.clangd.setup {}
 
 			--Markup Languages
 			lspc.html.setup {}						-- HTML

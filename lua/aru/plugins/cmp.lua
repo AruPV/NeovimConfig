@@ -1,7 +1,7 @@
 -- CMP
 -- https://github.com/hrsh7th/nvim-cmp?tab=readme-ov-file
 --
--- A completion engine for Lua! Requires a ton of stuff, lol.
+-- A completion engine for NVIM! Requires a ton of stuff, lol.
 
 
 return{

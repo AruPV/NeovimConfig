@@ -22,5 +22,4 @@ require("lazy").setup("aru.plugins")
 
 -- Keymaps for Lazy
 local default_opts = { noremap = true, silent = true }
-vim.api.nvim_set_keymap("n", "<leader>l", ":Lazy<CR>", default_opts)
-vim.api.nvim_set_keymap("n", "<leader>l", ":Lazy<CR>", default_opts)
+vim.api.nvim_set_keymap("n", "<leader>`", ":Lazy<CR>", default_opts)
