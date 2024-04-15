@@ -9,6 +9,9 @@ return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
 	name = "Tree-sitter",
+	dependencies = {
+			{'nvim-tree/nvim-web-devicons', name = "~Dep: Web Devicons"},
+	},
 	config = function()
 		require'nvim-treesitter.configs'.setup({
 			-- A list of parser names, or "all" (the five listed parsers should always be installed)
@@ -20,7 +23,9 @@ return {
 				"query",
 				"python",
 				"go",
-				"javascript"
+				"javascript",
+				"tsx",
+				"typescript"
 			},
 
 			-- Install parsers synchronously (only applied to `ensure_installed`)
