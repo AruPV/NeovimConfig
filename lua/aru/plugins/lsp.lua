@@ -24,11 +24,17 @@ return {
 	{ -- MASON
 		"williamboman/mason.nvim",
 		name = "Mason",
+		config = function()
+			require("mason").setup()
+		end
 	},
 
 	{ -- MASON-LSPCONFIG
 	    "williamboman/mason-lspconfig.nvim",
-		name = "Mason-LSPConfig"
+		name = "Mason-LSPConfig",
+		config = function()
+			require("mason-lspconfig").setup()
+		end
 	},
 
 	{ -- LSPCONFIG 
@@ -46,11 +52,13 @@ return {
 			lspc.gopls.setup {}						-- Go
 			lspc.lua_ls.setup {}					-- Lua
 			lspc.clangd.setup {}
+			lspc.emmet_language_server.setup {}
 
 			--Markup Languages
 			lspc.html.setup {}						-- HTML
 			lspc.texlab.setup {}					-- TEX
 			lspc.cssls.setup {}						-- CSS
+			lspc.tailwindcss.setup {}
 
 
 			-- SETUP MAPPINGS

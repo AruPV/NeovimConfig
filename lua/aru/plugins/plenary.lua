@@ -1,6 +1,7 @@
 -- PLENARY 
 -- 
--- Useful Lua libraries. Required by Telescope (have), Neogit (want), Neotree (might want)
+-- Useful Lua libraries. Required by Telescope (have), Neogit (want),
+-- Neotree (might want)
 
 return {
 	"nvim-lua/plenary.nvim",

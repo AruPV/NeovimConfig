@@ -23,4 +23,5 @@ require("lazy").setup("aru.plugins")
 -- Keymaps for Lazy
 local default_opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("n", "<leader>`", ":Lazy<CR>", default_opts)
-vim.cmd("colorscheme kanagawabones")
+vim.cmd("colorscheme cyberdream")
+vim.cmd('hi LineNr guibg=#00000000 guifg=#9977aa')

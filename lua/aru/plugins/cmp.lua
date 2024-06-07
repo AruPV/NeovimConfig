@@ -1,5 +1,4 @@
--- CMP
--- https://github.com/hrsh7th/nvim-cmp?tab=readme-ov-file
+-- #CMP
 --
 -- A completion engine for NVIM! Requires a ton of stuff, lol.
 
@@ -36,9 +35,20 @@ return{
 					['<C-Space>'] = cmp.mapping.complete(),
 					['<C-e>'] = cmp.mapping.abort(),
 
-					-- Accept currently selected item. Set `select` to `false`
-					-- to only confirm explicitly selected items.
-					['<CR>'] = cmp.mapping.confirm({ select = true }),
+
+					-- This little snippet will confirm with tab, and 
+					-- if no entry is selected, will confirm the first item
+					["<Tab>"] = cmp.mapping(function(fallback)
+						if cmp.visible() then
+							local entry = cmp.get_selected_entry()
+							if not entry then
+								cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
+							end
+							cmp.confirm()
+						else
+							fallback()
+						end
+					end, {"i","s","c",}),
 				}),
 				sources = cmp.config.sources({
 					{ name = 'nvim_lsp' },

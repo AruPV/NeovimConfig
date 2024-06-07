@@ -23,3 +23,4 @@ vim.api.nvim_set_keymap("n", "l", "h", {noremap = true, silent = true})
 
 vim.api.nvim_set_keymap("n", "<leader>;", "<C-w>l", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>l", "<C-w>h", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>bd", ":bfdo bwipeout", {noremap = true, silent = true})
