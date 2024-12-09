@@ -19,6 +19,7 @@ return {
 				"c",
 				"lua",
 				"vim",
+				"gdscript",
 				"vimdoc",
 				"query",
 				"latex",

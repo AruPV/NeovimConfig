@@ -108,6 +108,12 @@ return{
 			require('lspconfig')['clangd'].setup {
 				capabilities = capabilities
 			}
+			require('lspconfig')['solargraph'].setup {
+				capabilities = capabilities
+			}
+			require('lspconfig')['gdscript'].setup {
+				capabilities = capabilities
+			}
 			require('lspconfig')['html'].setup {
 				capabilities = capabilities
 			}

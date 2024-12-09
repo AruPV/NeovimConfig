@@ -47,12 +47,14 @@ return {
 
 			--Programming Languages
 			lspc.pyright.setup {}					-- Python
+			lspc.solargraph.setup {}				-- Ruby
 			lspc.tsserver.setup {}					-- Typescript
 			lspc.rust_analyzer.setup {}				-- Rust
 			lspc.gopls.setup {}						-- Go
 			lspc.lua_ls.setup {}					-- Lua
 			lspc.clangd.setup {}
 			lspc.emmet_language_server.setup {}
+			lspc.gdscript.setup {}
 
 			--Markup Languages
 			lspc.html.setup {}						-- HTML
@@ -68,6 +70,6 @@ return {
 			vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 			vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 			vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
-		end,
-	},
+		end
+	}
 }

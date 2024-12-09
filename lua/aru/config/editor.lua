@@ -1,7 +1,6 @@
 vim.g.mapleader = " "
 vim.wo.relativenumber = true
 vim.wo.number = true
-vim.cmd('set colorcolumn=79,99')
 vim.cmd('set shiftwidth=4')
 vim.cmd('set tabstop=4')
 
